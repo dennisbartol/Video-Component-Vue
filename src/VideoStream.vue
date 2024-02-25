@@ -21,9 +21,14 @@
     setupPlayer() {
       const video = this.$reds.videoPlayer;
       video.src = this.src; 
-    }
-  }
-    
+      video.addEventListener('loadedmetadata', this.playVideo);
+    },
+
+  playVideo() {
+      const video = this.$refs.videoPlayer;
+      video,.play();
+      }
+   },
 }
 
       
