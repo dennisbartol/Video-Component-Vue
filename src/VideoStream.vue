@@ -29,9 +29,12 @@
       video,.play();
       }
    },
-}
-
-      
+    beforeUnmount() { 
+      const video = this.$refs.videoPlayer; 
+      video.removeEventListener('loadedmetadata', this.playVideo);
+    }
+};
+     
 </script>
 
 
