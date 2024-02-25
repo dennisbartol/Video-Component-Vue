@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <VideoStream :src="http://#/example" />
