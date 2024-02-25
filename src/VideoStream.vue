@@ -40,13 +40,10 @@
 
 <style>
 
-body { 
-  margin: 0; 
-  padding: 0; 
-  min-height: 100vh; 
-  background-color: #010101; 
-  color: ghostwhite; 
+.video-stream { 
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto;
 }
-
   
 </style> 
