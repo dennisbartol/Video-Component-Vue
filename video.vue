@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import VideoStream from './VideoStream.vue'; 
+  import VideoStream from './src/VideoStream.vue'; 
 
   export default { 
     name: 'App', 
