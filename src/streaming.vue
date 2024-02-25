@@ -1,1 +1,35 @@
+<template>
+  <div>
+    <VideoStream :src="http://#/example" />
+  </div>
+</template>
 
+<script>
+  import VideoStream from './VideoStream.vue'; 
+
+  export default { 
+    name: 'App', 
+    components: {
+      VideoStream
+    },
+    data() {
+      return { 
+        videoSourceUrl: 'https://url.com/video.mp4'
+      };
+    }
+  };
+</script>
+
+
+<style>
+
+body { 
+  margin: 0; 
+  padding: 0; 
+  min-height: 100vh; 
+  background-color: #010101; 
+  color: ghostwhite; 
+}
+
+  
+</style> 
