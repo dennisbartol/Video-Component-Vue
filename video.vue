@@ -14,6 +14,11 @@
       VideoStream
     },
     data() {
-
+      return { 
+        videoSourceUrl: 'https://url.com/video.mp4'
+      };
     }
-  }
+  };
+</script>
+
+
