@@ -26,7 +26,7 @@
 
   playVideo() {
       const video = this.$refs.videoPlayer;
-      video,.play();
+      video.play();
       }
    },
     beforeUnmount() { 
