@@ -1,23 +1,32 @@
 <template>
   <div>
-    <VideoStream :src="http://#/example" />
+    <video ref="videoPlayer" controls></video>
   </div>
 </template>
 
 <script>
-  import VideoStream from './VideoStream.vue'; 
-
+  
   export default { 
-    name: 'App', 
-    components: {
-      VideoStream
+    name: 'VideoStream', 
+    props: {
+      src: {
+        type: String, 
+        required: true
+      }
     },
-    data() {
-      return { 
-        videoSourceUrl: 'https://url.com/video.mp4'
-      };
+  mounted() {
+    this.setupPlayer();
+  },
+  methods: {
+    setupPlayer() {
+      const video = this.$reds.videoPlayer;
+      video.src = this.src; 
     }
-  };
+  }
+    
+}
+
+      
 </script>
 
 
