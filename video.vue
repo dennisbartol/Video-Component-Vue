@@ -1,6 +1,6 @@
 <template>
   <div>
-    <VideoStream :src="https://www.example.net./example.mp4" />
+    <VideoStream :src="https://www.example.net/example.mp4" />
   </div>
 </template>
 
